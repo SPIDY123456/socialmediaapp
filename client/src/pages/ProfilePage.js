@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTh, faList } from '@fortawesome/free-solid-svg-icons'; // Icons for grid and list views
 
-const API_URL = 'http://localhost:3001';
+const API_URL = 'https://socialmediaapp-cxsr.onrender.com';
 
 const ProfilePage = () => {
     const [user, setUser] = useState(null);
