@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import moment from "moment";
 
-const API_URL = `http://localhost:3001`; // Your backend URL
+const API_URL = `https://socialmediaapp-cxsr.onrender.com`; // Your backend URL
 
 const StoryDetail = () => {
     const { id } = useParams(); // Get the user ID from the URL
