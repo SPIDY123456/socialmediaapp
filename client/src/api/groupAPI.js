@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api/groups';
+const API_URL = 'https://socialmediaapp-cxsr.onrender.com/api/groups';
 
 
 const getToken = () => localStorage.getItem('token'); // Adjust this based on where you're storing the token
