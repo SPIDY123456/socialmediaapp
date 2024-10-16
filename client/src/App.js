@@ -12,7 +12,7 @@
   import GroupPage from "./pages/GroupPage";
   import StreamPage from "./pages/StreamPage";
 
-  const API_URL = `http://localhost:3001`
+  const API_URL = `https://socialmediaapp-cxsr.onrender.com`
 
   const App = () => {
     const userId = '6708ab88636e45ebfa4141e8';
