@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 
-const { API_URL } = `http://localhost:3001`;
+const { API_URL } = `https://socialmediaapp-cxsr.onrender.com`;
 
 const Notifications = ({ userId }) => {
     const [notifications, setNotifications] = useState([]);
