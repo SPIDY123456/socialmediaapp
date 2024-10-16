@@ -3,7 +3,7 @@ import axios from "axios";
 import Post from "../components/Post"; 
 import { io } from "socket.io-client";
 
-const API_URL = `http://localhost:3001`; 
+const API_URL = `https://socialmediaapp-cxsr.onrender.com`; 
 
 
 const socket = io(API_URL, {
