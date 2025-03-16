@@ -48,7 +48,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
 
         if (user && (await bcrypt.compare(password, user.password))) {
-            res.json({
+            res.status(200).json({
                 _id: user._id,
                 name: user.name,
                 username:user.username,
@@ -61,7 +61,7 @@ const loginUser = asyncHandler(async (req, res) => {
             });
 
         } else {
-            res.status(400).json({ message: 'Invalid email and password' });
+            res.status(401).json({ message: 'Invalid email and password' });
         }
     } catch (error) {
         console.error('Error during login:', error);  // Log the error for debugging
@@ -81,7 +81,7 @@ const getUserProfile = (asyncHandler(async(req,res) => {
 
     if(user) {
         res.json({
-            id: user._id,
+            _id: user._id,
             name: user.name,
             username:user.username,
             email: user.email,
