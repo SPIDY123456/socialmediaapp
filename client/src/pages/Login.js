@@ -17,7 +17,8 @@ const Login = () => {
         setLoading(true);
         
         try {
-            const { data } = await axios.post(`${API_URL}/api/users/login`, { email, password }, {
+            const { data } = await axios.post(`${API_URL}/api/users/login`,
+                JSON.stringify({ email, password }), {
                 headers: {
                     'Content-Type': 'application/json',
                 },
